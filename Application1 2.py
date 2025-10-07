@@ -14,21 +14,99 @@ HEADERS_BASE = {"Content-Type": "application/json"}
 
 # Customer-Industry Mapping
 CUSTOMER_INDUSTRY_MAP = {
-    "Abbive": "Pharma",
-    "BMS": "Pharma", 
-    "BLR Airport": "Logistics",
-    "Chevron": "Energy",
-    "Coles": "Retail",
-    "DELL": "Technology",
+    "Select Account": "Select Industry",
+    # Pharmaceutical
+    "Abbvie": "Pharma",
+    "BMS": "Pharma",
+    "Pfizer": "Pharma",
+    "Johnson & Johnson": "Pharma",
+    "Novartis": "Pharma",
+    "Merck": "Pharma",
+    "Roche": "Pharma",
+    # Technology
     "Microsoft": "Technology",
-    "Mu Labs": "Technology",
-    "Nike": "Consumer Goods",
-    "Skill Development": "Education",
-    "Southwest Airlines": "Airlines",
+    "DELL": "Technology",
+    "IBM": "Technology",
+    "Oracle": "Technology",
+    "SAP": "Technology",
+    "Salesforce": "Technology",
+    "Adobe": "Technology",
+    # Retail
+    "Walmart": "Retail",
+    "Target": "Retail",
+    "Costco": "Retail",
+    "Kroger": "Retail",
+    "Coles": "Retail",
+    "Tesco": "Retail",
+    "Carrefour": "Retail",
     "THD": "Retail",
-    "Tmobile": "Technology",
-    "Walmart": "Retail"
+    # Airlines
+    "Southwest Airlines": "Airlines",
+    "Delta Airlines": "Airlines",
+    "United Airlines": "Airlines",
+    "American Airlines": "Airlines",
+    "Emirates": "Airlines",
+    "Lufthansa": "Airlines",
+    "BLR Airport": "Airlines",
+    # Consumer Goods
+    "Nike": "Consumer Goods",
+    "Adidas": "Consumer Goods",
+    "Unilever": "Consumer Goods",
+    "Procter & Gamble": "Consumer Goods",
+    "Coca-Cola": "Consumer Goods",
+    "PepsiCo": "Consumer Goods",
+    # Energy
+    "Chevron": "Energy",
+    "ExxonMobil": "Energy",
+    "Shell": "Energy",
+    "BP": "Energy",
+    "TotalEnergies": "Energy",
+    # Finance
+    "JPMorgan Chase": "Finance",
+    "Bank of America": "Finance",
+    "Wells Fargo": "Finance",
+    "Goldman Sachs": "Finance",
+    "Morgan Stanley": "Finance",
+    "Citigroup": "Finance",
+    # Healthcare
+    "UnitedHealth": "Healthcare",
+    "CVS Health": "Healthcare",
+    "Anthem": "Healthcare",
+    "Humana": "Healthcare",
+    "Kaiser Permanente": "Healthcare",
+    # Logistics
+    "FedEx": "Logistics",
+    "UPS": "Logistics",
+    "DHL": "Logistics",
+    "Maersk": "Logistics",
+    "Amazon Logistics": "Logistics",
+    # E-commerce
+    "Amazon": "E-commerce",
+    "Alibaba": "E-commerce",
+    "eBay": "E-commerce",
+    "Shopify": "E-commerce",
+    "Flipkart": "E-commerce",
+    # Automotive
+    "Tesla": "Automotive",
+    "Ford": "Automotive",
+    "General Motors": "Automotive",
+    "Toyota": "Automotive",
+    "Volkswagen": "Automotive",
+    # Hospitality
+    "Marriott": "Hospitality",
+    "Hilton": "Hospitality",
+    "Hyatt": "Hospitality",
+    "Airbnb": "Hospitality",
+    # Education
+    "Skill Development": "Education",
+    "Coursera": "Education",
+    "Udemy": "Education",
+    "Khan Academy": "Education",
+    # Other
+    "Tmobile": "Telecommunications",
+    "Mu Labs":"Other"
 }
+
 
 ACCOUNTS = ["Select Customer"] + list(CUSTOMER_INDUSTRY_MAP.keys())
 INDUSTRIES = ["Select Industry"] + list(set(CUSTOMER_INDUSTRY_MAP.values()))
